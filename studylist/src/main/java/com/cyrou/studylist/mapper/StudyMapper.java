@@ -10,5 +10,6 @@ public interface StudyMapper {
 
     StudyMapper INSTANCE = Mappers.getMapper(StudyMapper.class);
 
+
     StudyDTO studyToStudyDTO(Study study);
 }
