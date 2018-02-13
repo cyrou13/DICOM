@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Study list</title>
+</head>
+<body>
+
+	<h1>Study list</h1>
+
+	<table>
+		
+		<thead>
+			<th>uid</th>
+			<th>description</th>
+		</thead>
+
+		<tr th:each="study : ${studies}">
+			<td th:text="${study.uid}">13467438</td>
+			<td th:text="${study.description}">Brain tumor</td>
+		</tr>
+	
+
+	</table>
+
+</body>
+</html>
